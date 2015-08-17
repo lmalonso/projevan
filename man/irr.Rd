@@ -4,17 +4,17 @@
 \alias{irr}
 \title{Calculate the Internal Rate of Return}
 \usage{
-irr(x = c(-1000, 1000, 1000, 1000))
+irr(cf = c(-1000, 1000, 1000, 1000))
 }
 \arguments{
-\item{x}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 }
 \value{
-rate a numeric value representing the Internal Rate of Return (IRR) of Cash Flows in 'x'.
+rate a numeric value representing the Internal Rate of Return (IRR) of Cash Flows in 'cf'.
 }
 \description{
 This function calculates the Internal Rate of Return (IRR) 'rate' of a series of cash flows in vector
-'x'.
+'cf'.
 }
 \author{
 Luis Martin Alonso

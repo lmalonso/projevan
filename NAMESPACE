@@ -3,6 +3,7 @@
 export(irr)
 export(nfv)
 export(npv)
+export(payback)
 export(plotCF)
 export(plotRate)
 importFrom(graphics,abline)

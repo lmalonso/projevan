@@ -2,12 +2,12 @@
 % Please edit documentation in R/projevan.R
 \name{fullnpv}
 \alias{fullnpv}
-\title{Generating a vector of Present Values from a vector of Cash Flows}
+\title{Generate a vector of Present Values from a vector of Cash Flows}
 \usage{
-fullnpv(x = c(-1000, 1000, 1000, 1000), rate = 0)
+fullnpv(cf = c(-1000, 1000, 1000, 1000), rate = 0)
 }
 \arguments{
-\item{x}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 
 \item{rate}{the discount or interest rate}
 }
@@ -16,7 +16,7 @@ net a vector of length n containing the present values of each component of vect
 }
 \description{
 This function creates a vector 'net' containing the present value of the
-components of vector 'x' at rate 'rate'.
+components of vector 'cf' at rate 'rate'.
 }
 \author{
 Luis Martin Alonso

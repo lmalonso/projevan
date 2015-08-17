@@ -4,16 +4,16 @@
 \alias{plotRate}
 \title{Plot the NPV profile}
 \usage{
-plotRate(val = c(-1000, 1000, 1000, 1000))
+plotRate(cf = c(-1000, 1000, 1000, 1000))
 }
 \arguments{
-\item{val}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 }
 \value{
 a plot of NPV vs. Interest Rate.
 }
 \description{
-This function plot the Net Present Value (NPV) of a series of cash flows in vector 'x' to a series of
+This function plot the Net Present Value (NPV) of a series of cash flows in vector 'cf' to a series of
 interest/discount rates.
 }
 \author{

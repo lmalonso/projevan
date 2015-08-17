@@ -4,19 +4,19 @@
 \alias{nfv}
 \title{Calculate the Net Future Value}
 \usage{
-nfv(x = c(-1000, 1000, 1000, 1000), rate = 0)
+nfv(cf = c(-1000, 1000, 1000, 1000), rate = 0)
 }
 \arguments{
-\item{x}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 
 \item{rate}{the discount or interest rate}
 }
 \value{
-net a numeric value representing the Net Future Value of Cash Flows in 'x' at rate 'rate'
+net a numeric value representing the Net Future Value of Cash Flows in 'cf' at rate 'rate'
 }
 \description{
 This functions calculates the Net Future Value (NFV) 'tot' of a series of cash flows in vector
-'x' at discount/interest rate 'rate'.
+'cf' at discount/interest rate 'rate'.
 }
 \author{
 Luis Martin Alonso

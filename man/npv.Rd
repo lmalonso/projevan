@@ -4,19 +4,19 @@
 \alias{npv}
 \title{Calculate the Net Present Value}
 \usage{
-npv(x = c(-1000, 1000, 1000, 1000), rate = 0)
+npv(cf = c(-1000, 1000, 1000, 1000), rate = 0)
 }
 \arguments{
-\item{x}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 
 \item{rate}{the discount or interest rate}
 }
 \value{
-net a numeric value representing the Net Present Value of Cash Flows in 'x'
+net a numeric value representing the Net Present Value of Cash Flows in 'cf'
 }
 \description{
 This function calculates the Net Present Value (NPV) 'net' of a series of cash flows in vector
-'x' at discount/interest rate 'rate'.
+'cf' at discount/interest rate 'rate'.
 }
 \author{
 Luis Martin Alonso

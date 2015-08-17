@@ -2,12 +2,12 @@
 % Please edit documentation in R/projevan.R
 \name{plotCF}
 \alias{plotCF}
-\title{Plot the Present Values}
+\title{Plot Cash Flows}
 \usage{
-plotCF(x = c(-1000, 1000, 1000, 1000), xl = "Period", yl = "Dollars")
+plotCF(cf = c(-1000, 1000, 1000, 1000), xl = "Period", yl = "Dollars")
 }
 \arguments{
-\item{x}{a vector of length n containing cash flows}
+\item{cf}{a vector of length n containing cash flows}
 
 \item{xl}{X label}
 
