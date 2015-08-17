@@ -1,0 +1,9 @@
+Package: projevan
+Type: Package
+Title: Project Evaluation and Analysis
+Version: 1.0
+Date: 2015-08-17
+Author: Luis Martin Alonso Sanchez
+Maintainer: Luis Martin Alonso Sanchez <lucho.al.san@gmail.com>
+Description: Performs evaluations and analysis to a project based on its cash flows and other financial parameters
+License: GPL-3
