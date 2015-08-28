@@ -152,3 +152,21 @@ payback<-function(cf=c(-1000,1000,1000,1000),rate=0.0,eff=FALSE){
      pb<-ii
      pb
 }
+
+#' Calculate the Effective Annual Rate
+#' 
+#' This function calculates the Effective Annual Rate 'ear' of an annual discount/interest rate 'rate'
+#' for a chosen frequency "freq".
+#' 
+#' @param APR numeric. APR is the Annual Percentage Rate. 
+#' @param freq character or numeric. The frequency to calculate the Effective Annual Rate. "A"=Annual,"S"=Semi-Annual,"Q"=Quarterly,"B"=Bimonthly,"M"=Monthly,"W"=Weekly,"D"=Daily.
+#' @return ear numeric. The Effective Annual Rate.
+#' @author Luis Martin Alonso
+#' @export
+
+EAR<-function(APR=0.0,freq="A"){
+     if(is.character(freq)){switch(EXPR=freq,A={k=1},S={k=2},Q={k=3},B={k=6},M={k=12},W={k=52},D={k=365})}
+     else{k<-freq}
+     ear<-(1+APR/k)^k-1
+     ear
+}
